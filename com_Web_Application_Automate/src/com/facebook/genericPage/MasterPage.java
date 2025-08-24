@@ -7,6 +7,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MasterPage {
 	
@@ -41,6 +42,13 @@ public class MasterPage {
 		else if(prop.getProperty("browser").equalsIgnoreCase("edge")) {
 			System.setProperty("webdriver.edge.driver", ".src\\com.facebook.drivers\\edgedriver.exe");
 			driver= new EdgeDriver();
+		}
+		else if(prop.getProperty("browser").equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.geckodriver.driver", ".\\src\\com.facebook.drivers.geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
+		else {
+			System.out.println("No Browser Details Found");
 		}
      }
 }

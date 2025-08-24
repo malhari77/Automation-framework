@@ -14,5 +14,10 @@ public class LoginPage extends CommonMethods {
 	public void getFacebookText() {
 		getWebElementText("FacebookText");
 	}
+	
+	// Click on password field
+	public void clickPasswordField() {
+		clickWebElement("Password");
+	}
 
 }

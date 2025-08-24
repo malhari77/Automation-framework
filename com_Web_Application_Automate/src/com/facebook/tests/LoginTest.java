@@ -10,7 +10,11 @@ public class LoginTest {
 
 	@Test
 	public void loginTest() throws Exception {
+		
 	LoginPage lp = new LoginPage();
+	
 	lp.getFacebookText();
+	lp.clickPasswordField();
+	
 	}
 }

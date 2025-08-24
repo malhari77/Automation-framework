@@ -14,5 +14,11 @@ public class CommonMethods extends MasterPage {
 		String gettextofWebElement = driver.findElement(By.xpath(or.getProperty(xpathkey))).getText();
 		System.out.println(gettextofWebElement);
 	}
+	 
+	 // click Method
+	 public void clickWebElement(String xpathkey) {
+		 driver.findElement(By.xpath(or.getProperty(xpathkey))).click();
+	 }
+			 
 
 }

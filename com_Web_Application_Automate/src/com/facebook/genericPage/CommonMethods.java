@@ -14,6 +14,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.log4testng.Logger;
+
+import java.time.Duration;
 
 public class CommonMethods extends MasterPage {
 
@@ -77,8 +80,19 @@ public class CommonMethods extends MasterPage {
 	 
 	 // Handling Explicit Wait -visibilityofElementLocated
 	 public void handleExplicitWait_visibilityofElementLocated(String xpathkey, String testdata) {
-		 WebDriverWait wt = new WebDriverWait(driver, 30);
-		 wt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(or.getProperty(xpathkey)))).click();
+		 WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 wt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(or.getProperty(xpathkey)))).sendKeys(td.getProperty(testdata));	 
+	}
+	 
+	 // Handling Explicit Wait - elementToBeClickable
+	 public void handleExplicitWait_elementToBeClickable(String xpathkey) {
+			 WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(30));
+			 wt.until(ExpectedConditions.elementToBeClickable(By.xpath(or.getProperty(xpathkey)))).click();			 
 	 }
 	 
+	 // Handling Log File
+	 public void handleLogger(String lagClassName, String loggerText) {
+		 Logger logger = Logger.getLogger(lagClassName);
+		 PropertyConfigurator.
+	 }
 }

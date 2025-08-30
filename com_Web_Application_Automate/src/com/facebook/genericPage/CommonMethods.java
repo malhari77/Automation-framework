@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
@@ -14,6 +15,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.log4testng.Logger;
 
 import java.time.Duration;
@@ -89,10 +91,18 @@ public class CommonMethods extends MasterPage {
 			 WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(30));
 			 wt.until(ExpectedConditions.elementToBeClickable(By.xpath(or.getProperty(xpathkey)))).click();			 
 	 }
-	 
-	 // Handling Log File
+	 // Handle Log File
 	 public void handleLogger(String lagClassName, String loggerText) {
 		 Logger logger = Logger.getLogger(lagClassName);
-		 PropertyConfigurator.
+		 PropertyConfigurator.configure(prop.getProperty("log4jpropertiesFileLoc"));
+		 logger.info(loggerText);
+	 }
+	 
+	 // capture screenshot
+	 public void captureScreenshot(ITestResult result) {
+		 if(ITestResult.FAILURE == result.getStatus());
+		 // create ref of screenshot interface & type casting
+		 TakeScreenshot ts = (TakeScreenshot) driver;  // type casting of 2 interfaces 
 	 }
 }
+	 

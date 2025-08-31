@@ -27,9 +27,9 @@ public class LoginTest {
 	Thread.sleep(2000);
 	lp.clearPassword();
 	Thread.sleep(2000);
-	lp.readExcelData("EmailorPhone", 1, 1, "ExcelTestDataSheetName");
+	lp.readExcelData("EmailorPhone", 2, 3, "ExcelTestDataSheetName");
 	Thread.sleep(2000);
-	lp.readExcelData("Password", 1, 1, "ExcelTestDataSheetName");
+	lp.readExcelData("Password", 3, 3, "ExcelTestDataSheetName");
   }
 	@AfterMethod
 	public void takescreenshot(ITestResult result2) throws Exception {

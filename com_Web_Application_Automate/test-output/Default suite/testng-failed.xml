@@ -5,7 +5,9 @@
     <classes>
       <class name="com.facebook.tests.LoginTest">
         <methods>
+          <include name="takescreenshot"/>
           <include name="loginTest"/>
+          <include name="closeLoginPage"/>
         </methods>
       </class> <!-- com.facebook.tests.LoginTest -->
     </classes>

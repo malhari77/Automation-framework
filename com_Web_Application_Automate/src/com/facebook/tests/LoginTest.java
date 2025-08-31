@@ -2,8 +2,12 @@ package com.facebook.tests;
 
 import java.io.IOException;
 
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import com.facebook.genericPage.MasterPage;
 import com.facebook.pages.LoginPage;
 
 public class LoginTest {
@@ -13,8 +17,29 @@ public class LoginTest {
 		
 	LoginPage lp = new LoginPage();
 	
+	lp.clickEmail();
+	lp.enterEmail();
+	lp.clickPassword();
+	lp.enterPassword();
 	lp.getFacebookText();
-	lp.clickPasswordField();
-	
+	Thread.sleep(2000);
+	lp.clearEmail();
+	Thread.sleep(2000);
+	lp.clearPassword();
+	Thread.sleep(2000);
+	lp.readExcelData("EmailorPhone", 1, 1, "ExcelTestDataSheetName");
+	Thread.sleep(2000);
+	lp.readExcelData("Password", 1, 1, "ExcelTestDataSheetName");
+  }
+	@AfterMethod
+	public void takescreenshot(ITestResult result2) throws Exception {
+		LoginPage lp = new LoginPage();
+		lp.captureScreenshot(result2);	
 	}
+	
+	@AfterClass
+	public static void closeLoginPage() {
+		MasterPage.driver.close();
+	}
+	
 }

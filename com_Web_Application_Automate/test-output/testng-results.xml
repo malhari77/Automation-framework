@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-24T22:50:48 IST" name="Default suite" finished-at="2025-08-24T22:54:53 IST" duration-ms="245516">
+  <suite started-at="2025-08-31T15:02:47 IST" name="Default suite" finished-at="2025-08-31T15:08:24 IST" duration-ms="337062">
     <groups>
     </groups>
-    <test started-at="2025-08-24T22:50:48 IST" name="Default test" finished-at="2025-08-24T22:54:53 IST" duration-ms="245516">
+    <test started-at="2025-08-31T15:02:47 IST" name="Default test" finished-at="2025-08-31T15:08:24 IST" duration-ms="337062">
       <class name="com.facebook.tests.LoginTest">
-        <test-method signature="loginTest()[pri:0, instance:com.facebook.tests.LoginTest@6b2ea799]" started-at="2025-08-24T22:50:48 IST" name="loginTest" finished-at="2025-08-24T22:54:53 IST" duration-ms="245222" status="FAIL">
+        <test-method signature="loginTest()[pri:0, instance:com.facebook.tests.LoginTest@3bf7ca37]" started-at="2025-08-31T15:02:47 IST" name="loginTest" finished-at="2025-08-31T15:08:24 IST" duration-ms="336912" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[java.util.concurrent.TimeoutException
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [58a557421df80435fc5e120262543de5, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\Shree\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55002}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55002/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 58a557421df80435fc5e120262543de5]]>
+Command: [a863721ebee71b43505d1c211bbdcd2d, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\Shree\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50327}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50327/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a863721ebee71b43505d1c211bbdcd2d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [58a557421df80435fc5e120262543de5, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\Shree\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55002}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55002/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 58a557421df80435fc5e120262543de5
+Command: [a863721ebee71b43505d1c211bbdcd2d, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\Shree\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50327}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50327/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a863721ebee71b43505d1c211bbdcd2d
 at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
@@ -35,7 +35,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:630)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
 at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1060)
 at com.facebook.genericPage.MasterPage.<init>(MasterPage.java:54)
-at com.facebook.genericPage.CommonMethods.<init>(CommonMethods.java:10)
+at com.facebook.genericPage.CommonMethods.<init>(CommonMethods.java:26)
 at com.facebook.pages.LoginPage.<init>(LoginPage.java:10)
 at com.facebook.tests.LoginTest.loginTest(LoginTest.java:14)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)

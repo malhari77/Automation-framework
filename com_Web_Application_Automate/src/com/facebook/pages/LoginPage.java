@@ -10,6 +10,10 @@ public class LoginPage extends CommonMethods {
 		super();	
 	}
 	
+	// 
+	
+	
+	
 	//Get Facebook Text
 	public void getFacebookText() {
 		getWebElementText("FacebookText");

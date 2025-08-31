@@ -7,16 +7,20 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.log4j.PropertyConfigurator;
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
-import org.testng.log4testng.Logger;
+import org.openqa.selenium.TakesScreenshot;
+//import org.testng.log4testng.Logger;
 
 import java.time.Duration;
 
@@ -99,10 +103,20 @@ public class CommonMethods extends MasterPage {
 	 }
 	 
 	 // capture screenshot
-	 public void captureScreenshot(ITestResult result) {
+	 public void captureScreenshot(ITestResult result) throws Exception {
 		 if(ITestResult.FAILURE == result.getStatus());
 		 // create ref of screenshot interface & type casting
-		 TakeScreenshot ts = (TakeScreenshot) driver;  // type casting of 2 interfaces 
-	 }
+		 TakesScreenshot ts = (TakesScreenshot) driver;  // type casting of 2 interfaces 
+		 
+		 // use  getScreenshotAs() to capture screenshot in File format
+		 // getScreenshotAs() method return type = File
+		 File sourceFile = ts.getScreenshotAs(OutputType.FILE);
+		 
+		 // copy the file to specific location
+		 File destFolder = new File("./screenshots" + result.getName() + ".png");
+		 FileUtils.copyFile(sourceFile, destFolder);
+		 System.out.println(result.getName() + "method() failed, screenshot captured");
+		 
+	}
 }
 	 

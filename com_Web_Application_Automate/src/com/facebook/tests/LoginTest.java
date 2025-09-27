@@ -21,7 +21,7 @@ public class LoginTest {
 	lp.enterEmail();
 	lp.clickPassword();
 	lp.enterPassword();
-	lp.getFacebookText();
+	//lp.getFacebookText();
 	Thread.sleep(2000);
 	lp.clearEmail();
 	Thread.sleep(2000);
@@ -41,5 +41,5 @@ public class LoginTest {
 	public static void closeLoginPage() {
 		MasterPage.driver.close();
 	}
-	
+
 }

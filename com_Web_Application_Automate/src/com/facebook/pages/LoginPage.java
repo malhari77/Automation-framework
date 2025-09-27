@@ -12,19 +12,19 @@ public class LoginPage extends CommonMethods {
 	
 	// Click on email field
 	public void clickEmail() {
-		clickWebElement("EmailorPhone");
+		clickWebElement("Username");
 		handleLogger("LoginPage", "Clicked Email Field");
 	}
 	
 	// Enter email
 	public void enterEmail() {
-		enterData("EmailorPhone", "TestData1");
+		enterData("Username", "TestData1");
 		handleLogger("LoginPage", "Entered Email");
 	}
 	
 	// Clear email
 	public void clearEmail() {
-		clearData("EmailorPhone");
+		clearData("Username");
 		handleLogger("LoginPage", "Cleared Email Field");
 	}
 	
@@ -47,10 +47,10 @@ public class LoginPage extends CommonMethods {
 	}
 	
 	//Get Facebook Text
-	public void getFacebookText() {
-		getWebElementText("FacebookText");
-		handleLogger("LoginPage", "Fetched Facebook Text");
-	}
+	// public void getFacebookText() {
+	//	getWebElementText("FacebookText");
+	//	handleLogger("LoginPage", "Fetched Facebook Text");
+	//}
 	
 	// Click on Login Button
 	public void clickLoginButton() {

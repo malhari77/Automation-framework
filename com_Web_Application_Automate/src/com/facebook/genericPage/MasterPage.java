@@ -50,7 +50,7 @@ public class MasterPage {
 		}
 		else {
 			System.out.println("No Browser Details Found");
-		}
+		}	
 		driver.manage().window().maximize();
 		// driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));

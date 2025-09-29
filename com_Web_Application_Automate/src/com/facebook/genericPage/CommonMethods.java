@@ -75,7 +75,7 @@ public class CommonMethods extends MasterPage {
 	 
 	 // Read Excel data
 	 public void readExcelData(String xpathkey, int rowNo, int columnNo, String ExcelTestData) throws Exception {
-		 File src = new File(".\\src\\com.facebook.resources\\Excel Test Data.xlsx");
+		 File src = new File(".\\src\\com.facebook.resources\\ExcelTestData.xlsx");
 		 FileInputStream fis = new FileInputStream(src);
 		 XSSFWorkbook wb = new XSSFWorkbook(fis);
 		 XSSFSheet sh = wb.getSheet(prop.getProperty(ExcelTestData));

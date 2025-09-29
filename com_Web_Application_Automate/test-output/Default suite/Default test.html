@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 27 16:16:40 IST 2025</td>
+<td>Started on:</td><td>Mon Sep 29 19:11:41 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (246 ms)</td>
+<tr><td>Total time:</td><td>287 seconds (287997 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,9 +76,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.facebook.tests.LoginTest.takescreenshot()'><b>takescreenshot</b><br>Test class: com.facebook.tests.LoginTest<br>Parameters: [TestResult name=loginTest status=FAILURE method=LoginTest.loginTest()[pri:0, instance:com.facebook.tests.LoginTest@3a52dba3] output={null}]</td>
-<td><div><pre>java.lang.NoClassDefFoundError: org/apache/http/client/methods/HttpRequestBase
-	at com.facebook.genericPage.MasterPage.&lt;init&gt;(MasterPage.java:57)
+<td title='com.facebook.tests.LoginTest.takescreenshot()'><b>takescreenshot</b><br>Test class: com.facebook.tests.LoginTest<br>Parameters: [TestResult name=loginTest status=FAILURE method=LoginTest.loginTest()[pri:0, instance:com.facebook.tests.LoginTest@22555ebf] output={null}]</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to read marionette port 
+Host info: host: &apos;MALHARIPATIL&apos;, ip: &apos;192.168.1.10&apos;
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 1}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:137)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:109)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:84)
+	at com.facebook.genericPage.MasterPage.&lt;init&gt;(MasterPage.java:50)
 	at com.facebook.genericPage.CommonMethods.&lt;init&gt;(CommonMethods.java:30)
 	at com.facebook.pages.LoginPage.&lt;init&gt;(LoginPage.java:10)
 	at com.facebook.tests.LoginTest.takescreenshot(LoginTest.java:36)
@@ -113,14 +133,29 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.HttpRequestBase
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	... 35 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace637241618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace637241618'><pre>java.lang.NoClassDefFoundError: org/apache/http/client/methods/HttpRequestBase
-	at com.facebook.genericPage.MasterPage.&lt;init&gt;(MasterPage.java:57)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1252540239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1252540239'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to read marionette port 
+Host info: host: &apos;MALHARIPATIL&apos;, ip: &apos;192.168.1.10&apos;
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 1}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:137)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:109)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:84)
+	at com.facebook.genericPage.MasterPage.&lt;init&gt;(MasterPage.java:50)
 	at com.facebook.genericPage.CommonMethods.&lt;init&gt;(CommonMethods.java:30)
 	at com.facebook.pages.LoginPage.&lt;init&gt;(LoginPage.java:10)
 	at com.facebook.tests.LoginTest.takescreenshot(LoginTest.java:36)
@@ -155,14 +190,9 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.Http
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.HttpRequestBase
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	... 35 more
 </pre></div></td>
-<td>0</td>
-<td>com.facebook.tests.LoginTest@3a52dba3</td></tr>
+<td>141</td>
+<td>com.facebook.tests.LoginTest@22555ebf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -176,7 +206,7 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.Http
 <td title='com.facebook.tests.LoginTest.closeLoginPage()'><b>closeLoginPage</b><br>Test class: com.facebook.tests.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>com.facebook.tests.LoginTest@3a52dba3</td></tr>
+<td>com.facebook.tests.LoginTest@22555ebf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -188,8 +218,28 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.Http
 </tr>
 <tr>
 <td title='com.facebook.tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.facebook.tests.LoginTest</td>
-<td><div><pre>java.lang.NoClassDefFoundError: org/apache/http/client/methods/HttpRequestBase
-	at com.facebook.genericPage.MasterPage.&lt;init&gt;(MasterPage.java:57)
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to read marionette port 
+Host info: host: &apos;MALHARIPATIL&apos;, ip: &apos;192.168.1.10&apos;
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 1}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:137)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:109)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:84)
+	at com.facebook.genericPage.MasterPage.&lt;init&gt;(MasterPage.java:50)
 	at com.facebook.genericPage.CommonMethods.&lt;init&gt;(CommonMethods.java:30)
 	at com.facebook.pages.LoginPage.&lt;init&gt;(LoginPage.java:10)
 	at com.facebook.tests.LoginTest.loginTest(LoginTest.java:18)
@@ -219,14 +269,29 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.Http
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.HttpRequestBase
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	... 30 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1201173334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1201173334'><pre>java.lang.NoClassDefFoundError: org/apache/http/client/methods/HttpRequestBase
-	at com.facebook.genericPage.MasterPage.&lt;init&gt;(MasterPage.java:57)
+</pre></div><a href='#' onClick='toggleBox("stack-trace722417467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace722417467'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to read marionette port 
+Host info: host: &apos;MALHARIPATIL&apos;, ip: &apos;192.168.1.10&apos;
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 1}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:137)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:109)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:84)
+	at com.facebook.genericPage.MasterPage.&lt;init&gt;(MasterPage.java:50)
 	at com.facebook.genericPage.CommonMethods.&lt;init&gt;(CommonMethods.java:30)
 	at com.facebook.pages.LoginPage.&lt;init&gt;(LoginPage.java:10)
 	at com.facebook.tests.LoginTest.loginTest(LoginTest.java:18)
@@ -256,14 +321,9 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.Http
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.HttpRequestBase
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	... 30 more
 </pre></div></td>
-<td>0</td>
-<td>com.facebook.tests.LoginTest@3a52dba3</td></tr>
+<td>146</td>
+<td>com.facebook.tests.LoginTest@22555ebf</td></tr>
 </table><p>
 </body>
 </html>

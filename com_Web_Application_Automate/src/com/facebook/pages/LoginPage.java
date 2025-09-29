@@ -47,10 +47,10 @@ public class LoginPage extends CommonMethods {
 	}
 	
 	//Get Facebook Text
-	// public void getFacebookText() {
-	//	getWebElementText("FacebookText");
-	//	handleLogger("LoginPage", "Fetched Facebook Text");
-	//}
+	 public void getFacebookText() {
+		getWebElementText("FacebookText");
+	  handleLogger("LoginPage", "Fetched Facebook Text");
+	}
 	
 	// Click on Login Button
 	public void clickLoginButton() {

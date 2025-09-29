@@ -2,6 +2,7 @@ package com.facebook.genericPage;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -52,7 +53,7 @@ public class MasterPage {
 			System.out.println("No Browser Details Found");
 		}	
 		driver.manage().window().maximize();
-		// driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(prop.getProperty("url"));
      }
 }

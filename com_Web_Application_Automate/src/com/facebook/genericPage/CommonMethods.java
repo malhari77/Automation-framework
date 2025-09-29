@@ -74,11 +74,11 @@ public class CommonMethods extends MasterPage {
 	 }
 	 
 	 // Read Excel data
-	 public void readExcelData(String xpathkey, int rowNo, int columnNo, String excelSheetName) throws Exception {
+	 public void readExcelData(String xpathkey, int rowNo, int columnNo, String ExcelTestData) throws Exception {
 		 File src = new File(".\\src\\com.facebook.resources\\Excel Test Data.xlsx");
 		 FileInputStream fis = new FileInputStream(src);
 		 XSSFWorkbook wb = new XSSFWorkbook(fis);
-		 XSSFSheet sh = wb.getSheet(prop.getProperty(excelSheetName));
+		 XSSFSheet sh = wb.getSheet(prop.getProperty(ExcelTestData));
 		 System.out.println(sh.getSheetName());
 		 String abc = sh.getRow(rowNo).getCell(columnNo).getStringCellValue();
 		 driver.findElement(By.xpath(or.getProperty(xpathkey))).sendKeys(abc);

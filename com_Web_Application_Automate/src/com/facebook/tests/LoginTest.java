@@ -30,6 +30,11 @@ public class LoginTest {
 	lp.readExcelData("EmailorPhone", 2, 3, "ExcelTestDataSheetName");
 	Thread.sleep(2000);
 	lp.readExcelData("Password", 3, 3, "ExcelTestDataSheetName");
+	lp.clickLoginButton();
+	
+	lp.clickEmail2();
+	lp.enterEmailTwo();
+	lp.clearEmail2();
   }
 	@AfterMethod
 	public void takescreenshot(ITestResult result2) throws Exception {

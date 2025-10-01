@@ -50,5 +50,22 @@ public class SignUpPage extends CommonMethods {
 		clearData("lastname");
 		handleLogger("SignUpPage", "last name field cleared");
 	}
-
+	
+	// select day from the list
+	public void selectDay() {
+		selectDropdownValue("day", "dayselect");
+		handleLogger("SignUpPage", "day selected");
+	}
+	
+	// select month from the list
+    public void selectMonth() {
+    	selectDropdownValue("month", "monthselect");
+    	handleLogger("SignUpPage", "month selected");
+    }
+    
+	// select year from the list
+    public void selectYear() {
+    	selectDropdownValue("year", "yearselect");
+    	handleLogger("SignUpPage", "month selected");
+    }
 }

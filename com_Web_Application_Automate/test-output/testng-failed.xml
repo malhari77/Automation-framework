@@ -5,6 +5,7 @@
     <classes>
       <class name="com.facebook.tests.SignUpTest">
         <methods>
+          <include name="closeSignUpPage"/>
           <include name="signUpTest"/>
         </methods>
       </class> <!-- com.facebook.tests.SignUpTest -->

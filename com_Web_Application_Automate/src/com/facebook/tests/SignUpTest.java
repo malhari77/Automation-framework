@@ -27,10 +27,15 @@ public class SignUpTest {
 		Thread.sleep(2000);
 		sup.enterLastName();
 		Thread.sleep(2000);
-		sup.clearFirstName();
+		//sup.clearFirstName();
 		Thread.sleep(2000);
-		sup.clearLastName();	
+		//sup.clearLastName();	
 		Thread.sleep(2000);
+		sup.selectDay();
+		Thread.sleep(2000);
+		sup.selectMonth();
+		Thread.sleep(2000);
+		sup.selectYear();
 	}
 	
 	@AfterClass

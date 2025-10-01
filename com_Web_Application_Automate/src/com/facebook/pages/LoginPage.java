@@ -45,26 +45,7 @@ public class LoginPage extends CommonMethods {
 		clearData("Password");
 		handleLogger("LoginPage", "Cleared Password Field");
 	}
-	
-	// // Click on email field
-	public void clickEmail2() {
-		clickWebElement("username");
-		handleLogger("LoginPage","Clicked Email Field");
-	}
 		
-	// Enter email
-		public void enterEmailTwo() {
-			enterData("username", "TestData3");
-			handleLogger("LoginPage", "Entered Email");
-		}
-		
-		// clear Email 
-		public void clearEmail2() {
-			clearData("username");
-			handleLogger("LoginPage", "Email cleared");
-		
-	}
-	
 	//Get Facebook Text
 	 public void getFacebookText() {
 		getWebElementText("FacebookText");

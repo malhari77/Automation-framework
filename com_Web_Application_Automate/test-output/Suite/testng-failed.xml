@@ -2,19 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <include name="Sanity"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.facebook.tests.SignUpTest">
         <methods>
-          <include name="signUpTest"/>
+          <include name="signUpTitle"/>
+          <include name="signUpLinks"/>
         </methods>
       </class> <!-- com.facebook.tests.SignUpTest -->
-      <class name="com.facebook.tests.LoginTest">
-        <methods>
-          <include name="takescreenshot"/>
-          <include name="loginTest"/>
-          <include name="closeLoginPage"/>
-        </methods>
-      </class> <!-- com.facebook.tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

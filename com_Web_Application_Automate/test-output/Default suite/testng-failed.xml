@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.facebook.tests.LoginTest">
+      <class name="com.facebook.tests.createUserTest">
         <methods>
-          <include name="takescreenshot"/>
-          <include name="closeLoginPage"/>
-          <include name="getLinks"/>
+          <include name="createUser"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="lauchApplication"/>
         </methods>
-      </class> <!-- com.facebook.tests.LoginTest -->
+      </class> <!-- com.facebook.tests.createUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

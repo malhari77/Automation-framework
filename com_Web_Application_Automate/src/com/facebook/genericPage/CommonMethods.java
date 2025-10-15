@@ -14,6 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -21,7 +22,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.openqa.selenium.TakesScreenshot;
 //import org.testng.log4testng.Logger;
-
 import java.time.Duration;
 
 public class CommonMethods extends MasterPage {
@@ -107,7 +107,8 @@ public class CommonMethods extends MasterPage {
 
 	// capture screenshot
 	public void captureScreenshot(ITestResult result) throws Exception {
-		if (ITestResult.FAILURE == result.getStatus());
+		if (ITestResult.FAILURE == result.getStatus())
+			;
 		// create ref of screenshot interface & type casting
 		TakesScreenshot ts = (TakesScreenshot) driver; // type casting of 2 interfaces
 

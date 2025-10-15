@@ -4,32 +4,35 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+import org.openqa.selenium.firefox.FirefoxDriver;
 import com.facebook.genericPage.CommonMethods;
 
 public class LoginPage extends CommonMethods {
-
+	
+	
+	
 	public LoginPage() throws IOException {
 		super();
 	}
 
-	// Click on email field
+	// Click on UserName field
 	public void clickEmail() {
 		clickWebElement("Username");
-		handleLogger("LoginPage", "Clicked Email Field");
+		handleLogger("LoginPage", "Clicked user name Field");
 	}
 
-	// Enter email
+	// Enter UserName
 	public void enterEmail() {
 		enterData("Username", "TestData1");
 		handleLogger("LoginPage", "Entered Email");
 	}
 
-	// Clear email
+	// Clear UserName
 	public void clearEmail() {
 		clearData("Username");
-		handleLogger("LoginPage", "Cleared Email Field");
+		handleLogger("LoginPage", "Cleared UserName Field");
 	}
 
 	// Click on Password Field
@@ -50,7 +53,7 @@ public class LoginPage extends CommonMethods {
 		handleLogger("LoginPage", "Cleared Password Field");
 	}
 
-	// Get Facebook Text
+	// Get Login Page Text
 	public void getFacebookText() {
 		getWebElementText("FacebookText");
 		handleLogger("LoginPage", "Fetched Facebook Text");
@@ -61,6 +64,18 @@ public class LoginPage extends CommonMethods {
 		clickWebElement("LoginButton");
 		handleLogger("LoginPage", "Clicked Login Button");
 	}
+	
+	// Click on profile 
+	public void profileClick() {
+		clickWebElement("profileclick");
+		handleLogger("LoginPage", "Profile clicked");
+	}
+	
+	// Click logout button
+	public void clickLogout() {
+		clickWebElement("logout");
+		handleLogger("LoginPage", "Logout clicked");
+	}
 
 	// Active links
 	public void getActiveLinks() {
@@ -69,5 +84,4 @@ public class LoginPage extends CommonMethods {
 		System.out.println("Total available links on login Page " + links);
 
 	}
-
 }

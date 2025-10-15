@@ -5,10 +5,16 @@
     <groups>
       <run>
         <include name="Smoke"/>
-        <include name="Sanity"/>
+        <exclude name="Sanity"/>
       </run>
     </groups>
     <classes>
+      <class name="com.facebook.tests.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="getLinks"/>
+        </methods>
+      </class> <!-- com.facebook.tests.LoginTest -->
       <class name="com.facebook.tests.SignUpTest">
         <methods>
           <include name="signUpTitle"/>
